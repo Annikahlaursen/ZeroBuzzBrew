@@ -151,7 +151,9 @@ button {
 }
 
 .pilh{
-    float: right;
+    position: fixed;
+    left: 50%;
+    top: 70%;
     padding: 30px;
     font-size:100px
 }
@@ -169,7 +171,9 @@ button {
   }
 
   .pilv{
-    float: left;
+    position: fixed;
+    left: 38%;
+    top: 70%;
     padding: 30px;
     font-size:100px
 }
@@ -189,4 +193,17 @@ button {
 footer p {
     font-size: 15px;
     
+}
+
+#main {
+    text-align: center;
+}
+
+#main img {
+    height: 300px;
+    width: auto;
+    margin-left: 30px;
+    margin-right: 30px;
+
+
 }
