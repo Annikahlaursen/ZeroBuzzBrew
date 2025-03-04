@@ -93,9 +93,9 @@ function nr1() {
         Hvad er din fortrukkende smag? <br>
            
     </p>
-    <button id="svar1" onclick="style='background-color:#c5d27f;'">Æble</button>
-    <button id="svar2" onclick="style='background-color:#c5d27f;'">Frugt</button>
-    <button id="svar3" onclick="style='background-color:#c5d27f;'">Frisk</button>
+    <label><input type="radio" name="capital" value="Able"> Æble</label>
+    <label><input type="radio" name="capital" value="Frugt"> Frugt</label>
+    <label><input type="radio" name="capital" value="Frisk"> Frisk</label>
     `
     pilh.innerHTML = `
         <a onclick="nr2()"> &#8594;</a>
@@ -114,9 +114,9 @@ function nr2(){
             Sprøgsmål 2 ud af 5 <br> <br>
             Foretrækker du meget eller lidtbundfald? <br>  
         </p>
-        <button id="svar1" onclick="style='background-color:#c5d27f;'">Meget</button>
-        <button id="svar2" onclick="style='background-color:#c5d27f;'">Midt i mellem</button>
-        <button id="svar3" onclick="style='background-color:#c5d27f;'">Lidt</button>
+        <label><input type="radio" name="capital" value="Meget"> Meget</label>
+        <label><input type="radio" name="capital" value="MidtiMellem"> Midt I Mellem</label>
+        <label><input type="radio" name="capital" value="Lidt"> Lidt</label>
     `    
    
     pilh.innerHTML = `
@@ -135,9 +135,9 @@ function nr3(){
         Sprøgsmål 3 ud af 5 <br> <br>
         Kan du lide din øl filteret? <br>  
     </p>
-    <button id="svar1" onclick="style='background-color:#c5d27f;'">Ja</button>
-    <button id="svar2" onclick="style='background-color:#c5d27f;'">Nej</button>
-    <button id="svar3" onclick="style='background-color:#c5d27f;'">Ved ikke</button>
+    <label><input type="radio" name="capital" value="Ja"> Ja</label>
+    <label><input type="radio" name="capital" value="Nej"> Nej</label>
+    <label><input type="radio" name="capital" value="Vedikke"> Ved Ikke</label>
 `    
 
 pilh.innerHTML = `
@@ -154,9 +154,9 @@ function nr4(){
         Sprøgsmål 4 ud af 5 <br> <br>
         Fortrækker du din øl lys eller mørk? <br>  
     </p>
-    <button id="svar1" onclick="style='background-color:#c5d27f;'">Lys</button>
-    <button id="svar2" onclick="style='background-color:#c5d27f;'">Mørk</button>
-    <button id="svar3" onclick="style='background-color:#c5d27f;'">Ingen præference</button>
+    <label><input type="radio" name="capital" value="Lys"> Lys</label>
+    <label><input type="radio" name="capital" value="Mork"> Mørk</label>
+    <label><input type="radio" name="capital" value="IngenPraference"> Ingen Præference</label>
 `    
 
 pilh.innerHTML = `
@@ -175,9 +175,9 @@ function nr5(){
         Sprøgsmål 5 ud af 5 <br> <br>
         Fortrækker du en grumset øl? <br>  
     </p>
-    <button id="svar1" onclick="style='background-color:#c5d27f;'">Ja</button>
-    <button id="svar2" onclick="style='background-color:#c5d27f;'">Nej</button>
-    <button id="svar3" onclick="style='background-color:#c5d27f;'">Ingen præference</button>
+    <label><input type="radio" name="capital" value="Ja"> Ja</label>
+    <label><input type="radio" name="capital" value="Nej"> Nej</label>
+    <label><input type="radio" name="capital" value="IngenPraference"> Ingen Præference</label>
 `    
 
 pilh.innerHTML = `
