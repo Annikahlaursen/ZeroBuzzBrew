@@ -314,12 +314,12 @@ header label {
     color: var(--sort);
 }
 
-#overskriftproduktion {
+.overskriftproduktion {
     text-align: center;
     padding: 22px;
 }
 
-#produktiontekst {
+.produktiontekst {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 40px;
@@ -329,7 +329,7 @@ header label {
 }
 
 /* our beer nederste sektion */
-#produktiontekst1 {
+.produktiontekst1 {
     text-align: center;
 }
 
@@ -367,7 +367,7 @@ header label {
     color: var(--hvid);
 }
 
-#produktiontekst3 img {
+.produktiontekst3 img {
     height: 400px;
 }
 
