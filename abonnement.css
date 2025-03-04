@@ -1,3 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Signika:wght@300..700&display=swap');
+
+
+:root {
+    --sort: #172442;
+    --hvid: #fdfdeb;
+    --gron:#c5d27f;
+    --orange: #f39c45;
+    --blaa:#89b9cf;
+    --lysrod: #f3a0b9;
+    --lilla: #5d4aa1;
+    --brun: #57341c;
+    --graa: #5e6b7f;
+
+    
+    --fatface:"Abril Fatface", serif;
+    --signika: "Signika", sans-serif;
+}
+
+
 h1 {
     text-align: center;
     margin-top: 5%;
@@ -87,6 +107,20 @@ div.scroll-container img {
   padding: 10px;
 }
 
+main a {
+    font-family: var(--signika);    
+    color: var(--sort);
+    
+}
 
+footer p {
+    font-family: var(--signika);    
+    color: var(--hvid);
+}
+
+footer h1 {
+    color: var(--hvid);
+
+}
 
 

@@ -31,7 +31,7 @@ hoved.innerHTML = `
                     </ul>
                 </li>
 
-                <li><a href="omod.html">Om Os</a>
+                <li><a href="omos.html">Om Os</a>
                     <ul>
                         <li><a href="omos.html">Vores historie</a></li>
                         <li><a href="fejl404.html">Kontakt</a></li>
@@ -99,7 +99,10 @@ function nr1() {
     `
     pilh.innerHTML = `
         <a onclick="nr2()"> &#8594;</a>
+    `
 
+    pilv.innerHTML = `
+        <a onclick="nr2()"> &#8594;</a>
     `
 }
 
@@ -111,14 +114,17 @@ function nr2(){
             Sprøgsmål 2 ud af 5 <br> <br>
             Foretrækker du meget eller lidtbundfald? <br>  
         </p>
-        <button id="svar1" onclick="style='background-color:#c5d27f;'">meget</button>
+        <button id="svar1" onclick="style='background-color:#c5d27f;'">Meget</button>
         <button id="svar2" onclick="style='background-color:#c5d27f;'">Midt i mellem</button>
         <button id="svar3" onclick="style='background-color:#c5d27f;'">Lidt</button>
     `    
    
     pilh.innerHTML = `
         <a onclick="nr3()"> &#8594;</a>
+    `
 
+    pilv.innerHTML = `
+    <a onclick="nr3()"> &#8594;</a>
     `
 }
 
@@ -131,12 +137,14 @@ function nr3(){
     </p>
     <button id="svar1" onclick="style='background-color:#c5d27f;'">Ja</button>
     <button id="svar2" onclick="style='background-color:#c5d27f;'">Nej</button>
-    <button id="svar3" onclick="'style="background-color:#c5d27f;'">Ved ikke</button>
+    <button id="svar3" onclick="style='background-color:#c5d27f;'">Ved ikke</button>
 `    
 
 pilh.innerHTML = `
     <a onclick="nr4()"> &#8594;</a>
-
+`
+pilv.innerHTML = `
+<a onclick="nr4()"> &#8594;</a>
 `
 }
 
@@ -153,7 +161,10 @@ function nr4(){
 
 pilh.innerHTML = `
     <a onclick="nr5()"> &#8594;</a>
+`
 
+pilv.innerHTML = `
+<a onclick="nr5()"> &#8594;</a>
 `
 }
 
@@ -171,60 +182,52 @@ function nr5(){
 
 pilh.innerHTML = `
     <a onclick="res()"> &#8594;</a>
+`
 
+pilv.innerHTML = `
+<a onclick="res()"> &#8594;</a>
 `
 }
 
-/** Lister: arrays... */
-// lister markeres med []
-let koeleskab = [
-    "billede 1", 
-    "billede 2", 
-    "billede 3", 
-    "billede 4", 
-    "billede 5", 
-    "billede 6", 
-    "billede 7", 
-    "billede 8", 
-    "billede 9", 
-    "billede 10", 
-    "billede 11", 
-    "billede 12"
-];
 
 
-const imgEl = document.getElementById('randomImage');
-const btn = document.getElementById('btn');
-
-const srcArray = [
-    "<img src='js/blaa.webp'>",
-    "<img src='js/blaa.webp'>",
-    "<img src='js/blaa.webp'>",
-    "<img src='js/blaa.webp'>"
-    ];
 
 
-imgEl.src = srcArray[0];
-
-
-//at lave den random
 
 function res() {
-    //alert("hej verden")
+    const srcArray = [
+    "<a href='lysAle.html'><img src='img/gron.webp'></a>",
+    "<a href='fejl404.html'><img src='img/blaa.webp'></a>",
+    "<a href='fejl404.html'><img src='img/pinkbrew.svg'></a>",
+    "<a href='fejl404.html'><img src='img/paskebryg.webp'></a>",
+    "<a href='fejl404.html'><img src='img/julebryg.webp'></a>", 
+    "<a href='fejl404.html'><img src='img/humlecitron.webp'></a>", 
+    "<a href='fejl404.html'><img src='img/humle.webp'></a>", 
+    "<a href='fejl404.html'><img src='img/citrus.webp'></a>", 
+    "<a href='fejl404.html'><img src='img/blondie.webp'></a>", 
+    "<a href='fejl404.html'><img src='img/blabarhindbar.webp'></a>", 
+    "<a href='fejl404.html'><img src='img/appelsinlime.webp'></a>", 
+    "<a href='fejl404.html'><img src='img/abletranebar.webp'></a>"
+    ]
+
+
     main.innerHTML = `
     <h2>
         Tillykke her er din top 3 øl
     </h2>
 
     `
-    main.innerHTML += "<img id='randomImage' src='" + srcArray[0] + "' alt='lorem'>"
+    // tilfældig værdi med .length på galleriet, der kan udviddes ad libitum
+    let rnd = Math.floor(Math.random()*srcArray.length)
+    let rnd2 = Math.floor(Math.random()*srcArray.length)
+    let rnd3 = Math.floor(Math.random()*srcArray.length)
+
+
+    // viser billedet (der skal ikke laves en img tag for den er allerede lavet i arrayet)
+    main.innerHTML += srcArray[rnd] + srcArray[rnd2] + srcArray[rnd3]
+
 }
 
 
-/*
-function end_img(){
-    randomImage.innerHTML = srcArray[Math.floor(Math.random() + srcArray.length)]
-
-}*/
 
 
