@@ -120,7 +120,6 @@ function nr2(){
         <a onclick="nr3()"> &#8594;</a>
 
     `
-
 }
 
 function nr3(){
@@ -147,8 +146,8 @@ function nr4(){
         Sprøgsmål 4 ud af 5 <br> <br>
         Fortrækker du din øl lys eller mørk? <br>  
     </p>
-    <button id="svar1" onclick="style='background-color:#c5d27f;'">Ja</button>
-    <button id="svar2" onclick="style='background-color:#c5d27f;'">Nej</button>
+    <button id="svar1" onclick="style='background-color:#c5d27f;'">Lys</button>
+    <button id="svar2" onclick="style='background-color:#c5d27f;'">Mørk</button>
     <button id="svar3" onclick="style='background-color:#c5d27f;'">Ingen præference</button>
 `    
 
