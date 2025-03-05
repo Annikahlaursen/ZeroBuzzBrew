@@ -6,6 +6,7 @@
     box-sizing: border-box;
 }
 
+/*De farver vi bruger, som er gjort til VAR*/
 :root {
     --sort: #172442;
     --hvid: #fdfdeb;
@@ -17,15 +18,17 @@
     --brun: #57341c;
     --graa: #5e6b7f;
 
-    
+/*De skrifttyper vi bruger*/
     --fatface:"Abril Fatface", serif;
     --signika: "Signika", sans-serif;
 }
-
+/*Baggrundsfarve og tekst farve*/
 body {
     background-color: var(--sort);
     color: var(--hvid);
 }
+
+/*Styling af header starter*/
 header {
     width: 100%;
     background: var(--sort);
@@ -125,12 +128,9 @@ header label {
 #menu-bar {
     display: none;
 }
+/*Styling af header slutter*/
 
-
-
-
-
-
+/*Styling af teskt starter*/
 h2{
     font-size: 40px;
     text-align: center;
@@ -143,6 +143,7 @@ p{
     font-weight: 100;
     margin-left: 32px;
 }
+/*Styling af tekst slutter*/
 
 button {
     margin: 30px;
@@ -150,6 +151,7 @@ button {
     height: 50px;
 }
 
+/*Styling af pillene starter*/
 .pilh{
     position: fixed;
     left: 50%;
@@ -190,6 +192,9 @@ button {
     text-decoration: none;
   }
 
+/*Styling af pillene slutter*/
+
+/*Styling af footer starter*/
 footer p {
     font-size: 15px;
     
@@ -210,3 +215,4 @@ label {
     font-family: var(--signika);
     margin: 20px;
 }
+/*Styling af footer slutter*/
