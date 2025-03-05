@@ -1,3 +1,4 @@
+/* impotering af fonte fra Googlefonts*/
 @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Signika:wght@300..700&display=swap');
 
 
@@ -19,7 +20,7 @@
     --brun: #57341c;
     --graa: #5e6b7f;
 
-    
+    /*De to skifttyper vi har brugt*/
     --fatface:"Abril Fatface", serif;
     --signika: "Signika", sans-serif;
 }
@@ -31,37 +32,40 @@ body {
     background-color: var(--hvid);
 }
 
+/*hvilken skifttype h1 har og hvor fed skriften er*/
 h1 {
     font-family: var(--fatface);
     font-weight: 400;
 
 }
 
+/*Hvilken font h2 har, hvor stor den er, og hvor fed skrifttypen er*/
 h2 {
     font-family: var(--fatface);
     font-size: 40px;
     font-weight: 400;
 }
 
+/*Hvilken font h3 har, hvor stor den er, og hvor fed skrifttypen er*/
 h3 {
     font-family: var(--fatface);
     font-weight: 400;
     font-size: 20px;
 }
 
+/*Hvilken font a har*/
 a {
     font-family: var(--fatface);
 
 }
 
+/*Hvilken font p har*/
 p {
     font-family: var(--signika);
 }
 /* ************************************************************************************ */
 
-
-
-/*Styling af header**************** */
+/*Her starter styling af header*/
 header {
     width: 100%;
     background: var(--hvid);
@@ -178,6 +182,7 @@ header label {
 #menu-bar {
     display: none;
 }
+/*Styling af header slutter*/
 
 /* ******************************************************************************************** */
 
@@ -185,19 +190,20 @@ header label {
 
 
 
-/*styling af forside ******************** */
-/*størrelse på forsidebillede*/
+/*styling af forside */
+/*størrelse på forsidebillede, så den fylder hele siden*/
 #skaal {
     width: 100%;
 }
 
-/*Styling af bestsellere*/
+/*Styling af bestsellere - Hvor meget padding, hvor teksten skal stå og hvilken farve teksten har, under bestseller teksten*/
 #bestsell {
     padding: 30px;
     text-align: center;
     color: var(--sort);
 }
 
+/*Hvordan billederne står under bestseller*/
 #bestsellere {
     margin: auto;
     width: 50%;
@@ -367,8 +373,9 @@ header label {
     gap: 40px;
     color: var(--hvid);
 }
+/*Styling underside om ølletsrejse slutter*/
 
-/*Laver ikonerne, hjerte, 0% og dråbe, samme størrelse*/
+/*Styling underside om os starter*/
 .facts img, .factsmork img, .kontaktoplysninger img {
     width: 80px;
     height: 80px;
@@ -412,8 +419,8 @@ header label {
 }
 /* *********************************************************************************************/
 
-/*Styling af fejl 404 side*/
-/*sætter tekst og billede ind vandret*/
+
+/*Styling fejl404 starter*/
 .fejl {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -472,6 +479,7 @@ header label {
     color: var(--sort);
   }
 /* *********************************************************************************** */
+/*Styling fejl404 slutter*/
 
 /*Stylign af oversigt side*/
 /*størrelse og farve på h2 overskriften*/
