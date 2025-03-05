@@ -7,6 +7,7 @@
     box-sizing: border-box;
 }
 
+/*Variabler til farver og fonte*/
 :root {
     --sort: #172442;
     --hvid: #fdfdeb;
@@ -22,7 +23,10 @@
     --fatface:"Abril Fatface", serif;
     --signika: "Signika", sans-serif;
 }
+/* *************************************************************************** */
 
+
+/*Styling af det generale, som baggrundsfarve, størrelse og fonte på overskrifter og tekst*/
 body {
     background-color: var(--hvid);
 }
@@ -53,11 +57,11 @@ a {
 p {
     font-family: var(--signika);
 }
+/* ************************************************************************************ */
 
 
 
-
-
+/*Styling af header**************** */
 header {
     width: 100%;
     background: var(--hvid);
@@ -76,14 +80,17 @@ header .navbar {
 
 }
 
+/*Størrelse på logo*/
 #headlogo {
     width: 170px;
 }
 
+/*Størrelse på kurv, profil og søgeikon*/
 .headikon {
     width: 60%;
 }
 
+/*kurv, profil og søgeikon er flexet for at sætte dem på linje*/
 .headikoncontainer {
     display: flex;
     justify-content: space-between;
@@ -94,7 +101,7 @@ header .navbar {
 }
 
 
-
+/*Styling af drop downmenu*/
 header .navbar ul {
     list-style: none;
     width: 60%;
@@ -102,8 +109,6 @@ header .navbar ul {
     display: flex;
     justify-content: space-between;
     align-self: center;
-
-
 }
 
 header .navbar ul li {
@@ -136,14 +141,12 @@ header .navbar ul li ul {
     width: 100%;
     background: var(--hvid);
     display: none;
-
 }
 
 header .navbar ul li ul li {
     width: 100%;
 
     /*border-top: 1px solid var(--sort);*/
-
 }
 
 header .navbar ul li ul li a{
@@ -152,14 +155,11 @@ header .navbar ul li ul li a{
     padding: 10px;
 
     /*border-top: 1px solid var(--sort);*/
-
 }
 
 header .navbar ul li ul li ul {
     left: 100px;
-    top:0;
-    
-    
+    top:0;   
 }
 
 header .navbar ul li:focus-within > ul,
@@ -167,6 +167,7 @@ header .navbar ul li:hover > ul {
     display: block;
 }
 
+/*Label til dropdownmenuen bliver skjult*/
 header label {
     font-size: 15px;
     color: var(--grå);
@@ -178,14 +179,19 @@ header label {
     display: none;
 }
 
+/* ******************************************************************************************** */
 
 
 
+
+
+/*styling af forside ******************** */
+/*størrelse på forsidebillede*/
 #skaal {
     width: 100%;
 }
 
-
+/*Styling af bestsellere*/
 #bestsell {
     padding: 30px;
     text-align: center;
@@ -200,44 +206,47 @@ header label {
     align-items: center;
 }
 
+/*størrelse på billede af bestsellere*/
 .brew {
     height: auto;
     width: 150px;
 }
 
+/*størrelse på den grønne bestseller - skal være større end de to andre*/
 #gronbrew {
     height: auto;
     width: 200px;
 }
 
 
-
-
-
-
+/*ikonserien vises på en mørk baggrund, som får en padding og den mørke farve*/
 .smagskendere {
     padding: 30px;
     background-color: var(--sort);
-  }
+}
 
+/*styling af overskriften til ikonerne*/
 .smagskendere h2 {
     text-align: center;
     color: var(--hvid);
     margin-bottom: 15px;
 }
 
+/*ikoner bliver flexet og står på række*/
 .smagskendere figure {
     display: flex;
     justify-content: space-evenly;
     height: 250px;
 }
 
+/*beskrivelserne på ikonerne får en størrelse på 90% af ikonet*/
 .smagskendere figure p {
     width: 90%;
     margin: auto;
 }
 
-
+/*styling af vende metoden - lånt fra w3s: https://www.w3schools.com/howto/howto_css_flip_card.asp
+- vi lader bare deres kommentering stå*/
 .card {
     text-align: center;
     color: var(--hvid);
@@ -299,15 +308,24 @@ header label {
       display: flex;
       justify-content: space-between;
       gap: 20px;
-  }
+}
 
+/* ****************************************************************************************** */
+
+
+  /* #ølletsRejse referere til styling af ny sektion med inforgraphic på forsiden
+     #ølletsRejse-produktion referer til siden Vores øl*/
   #ølletsRejse,  #ølletsRejse-produktion {
     text-align: center;
     padding: 30px;
     color: var(--sort);
-  }
+}
 
-  #ølletsRejse-produktion {color: var(--hvid); background-color: var(--sort);}
+/*herfra begynder styling af vores øl siden*/
+  #ølletsRejse-produktion {
+    color: var(--hvid); 
+    background-color: var(--sort);
+}
 
   .produktion {
     padding: 30px;
@@ -319,6 +337,7 @@ header label {
     padding: 22px;
 }
 
+/*tekst er sat i et grid, så de står ved siden af hinanden*/
 .produktiontekst {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -328,17 +347,18 @@ header label {
     margin: auto;
 }
 
-/* our beer nederste sektion */
+/*our beer (vores øl) nederste sektion */
 .produktiontekst1 {
     text-align: center;
 }
 
+/*styler denne section, med små facts om frimaet, med en sort baggrund og en padding */
 .facts {
     justify-self: center;
     padding: 100px;
     background-color: var(--sort);
 }
-
+/*Sætter de tre ikoner og tekst i et grid, der lægger dem ved siden af hinanden (vandret)*/
 .gridfacts {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -348,30 +368,39 @@ header label {
     color: var(--hvid);
 }
 
+/*Laver ikonerne, hjerte, 0% og dråbe, samme størrelse*/
 .facts img, .factsmork img, .kontaktoplysninger img {
     width: 80px;
     height: 80px;
     margin: 20px;
 }
+/* ***************************************************************************************************/
 
+/*Start på styling af Om Os*/
+/*factsmork bruges på Om os siden og laver denne section med hvidbaggrund*/
 .factsmork {
     padding: 100px;
     background-color: var(--hvid);
 }
 
-.factsmork p {color: var(--sort);}
+/*gør tekst sort*/
+.factsmork p {
+    color: var(--sort);
+}
 
+/*kontaktoplysninger er en ny sektion der skal være hvis i stedet for sort*/
 .kontaktoplysninger {
     padding: 100px;
     background-color: var(--sort);
     color: var(--hvid);
 }
 
+/*bestemmer størrelse på billedet på om os siden af øl produktion*/
 .produktiontekst3 img {
     height: 400px;
 }
 
-
+/*lægger tekst og billede ind i et grid, så de står ved siden af hinanden (vandret) på siden*/
 #produktiontekst2 {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -381,7 +410,10 @@ header label {
     padding-top: 3%;
     margin: auto;
 }
+/* *********************************************************************************************/
 
+/*Styling af fejl 404 side*/
+/*sætter tekst og billede ind vandret*/
 .fejl {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -394,6 +426,7 @@ header label {
     color: var(--sort);
 }
 
+/*størrelse på overskrift og tekst*/
 #fejltekst h1 {
     font-size: 4.5rem;
 }
@@ -402,14 +435,17 @@ header label {
     font-size: 30px;
 }
 
+/*centerer teksten på fejl404*/
 #fejltekst {
     text-align: center;
 }
 
+/*størrelse på smeltende is billede*/
 #fejlbillede img {
     width: 360px;
 }
 
+/*Styling af knap der dirgere tilbage til forside*/
 .tilbageforsideknap {
     border: none;
     color: var(--hvid);
@@ -429,18 +465,23 @@ header label {
     border: 2px solid var(--sort);
     border-radius: 24px;
   }
-  
+
+  /*Hover effekt på tilbageTilForside knappen*/
   .tilbageforsideknap:hover {
     background-color: var(--graa);
     color: var(--sort);
   }
+/* *********************************************************************************** */
 
+/*Stylign af oversigt side*/
+/*størrelse og farve på h2 overskriften*/
 #oversigth2 {
     color: var(--sort);
     text-align: center;
     padding: 30px;
 }
 
+/*alle billeder bliver flexet så de står vandret på siden, de wrappes hvis der er for "mange"*/
 #oversigt {
     width: 70%;
     margin: auto;
@@ -449,21 +490,27 @@ header label {
     text-align: center;
 }
 
+/*størrelse på ølbilleder*/
 #oversigt .varianter img {
     width: 40%;
 }
 
+/*alle øl har kun 33% af kassen, så de lægger sig over og under hinanden, pga. flex-wrap:wrap*/
 #oversigt .varianter  {
     width: 33%;
     padding: 20px;
 }
 
+/*alle navne tekster til øllene er links, så de er stylet til at ligne tekst og ikke links*/
 #oversigt a  {
     text-decoration: none;
     color: var(--sort);
 }
+/* ************************************************************************************************/
 
 
+/*Styling af lys Ale side*/
+/*Billede og beskrivelse af øl lagt ved siden af hinanden*/
 .produkt {
     display: flex;
     justify-content: space-evenly;
@@ -484,15 +531,18 @@ header label {
     width: 40px;
 }
 
+/*mindre fontstørrelse på tekten*/
 .beskrivelse p {
     font-size: 20px;
 }
 
+/*prisen står med fed skrift*/
 .beskrivelse .pris {
     font-weight: bold;
     padding-top: 20px;
 }
 
+/*ikonerne, hjerte, plus og minus, bliver flextet og lagt vandret*/
 .kobsIkoner {
     display: flex;
     align-items: center;
@@ -500,10 +550,12 @@ header label {
     padding-top: 10px;
 }
 
+/*ikonerne der er indsat som billeder får en størrelse på 25px*/
 .kobsIkoner .mindre {
     width: 25px;
 }
 
+/* styling at knap til at lægge i kurv*/
 .kobsIkoner button {
     width: 100px;
     height: 40px;
@@ -515,10 +567,12 @@ header label {
     border: 0px;
 }
 
+/*hoverfunktion ved læg i kurv*/
 .kobsIkoner button:hover {
     background-color: var(--orange);    
 }
 
+/*størrelse på billedet af øllen*/
 .billedeAfDase {
     width: 40%;
 }
@@ -527,8 +581,7 @@ header label {
     width: 70%;
 }
 
-
-
+/*Sektion med information om øllen*/
 .information {
     color: var(--sort);
     width: 70%;
@@ -536,11 +589,13 @@ header label {
     padding: 50px;
 }
 
+/*størrelse på overskrift*/
 .information h2 {
     text-align: center;
     padding-bottom: 20px;
 }
 
+/*information er flexet for at lave to kollonner til teksten*/
 .information .tekstInformation {
     display: flex;
     gap: 50px;
@@ -551,8 +606,7 @@ header label {
     font-size: 20px;
 }
 
-
-
+/*ny sektion med varedekleration*/
 .specifikationer {
     background-color: var(--sort);
     color: var(--hvid);
@@ -564,6 +618,7 @@ header label {
     padding: 20px;
 }
 
+/*kasserne med tekst er fordelt vandret på skærmen*/
 .varedeklartion {
     display: flex;
     justify-content: space-evenly;
@@ -571,6 +626,7 @@ header label {
     margin: auto;
 }
 
+/*hvert tekstkasse bliver stylet til hvid med sort tekst med præcis 100x100px i størrekse - teksten inden i er lavet som block, så de står lodret på hinanden*/
 .speciKasse {
     background-color: var(--hvid);
     color: var(--sort);
@@ -580,6 +636,7 @@ header label {
 
 }
 
+/*styling af h4, som bruges som overskrift i kassen*/
 .speciKasse h4 {
     font-family: var(--signika);
     font-weight: bold;
@@ -589,13 +646,16 @@ header label {
     align-content: center;
 }
 
+/*styling af tekst i kassen*/
 .speciKasse p {
     font-size: 13px;
     height: 20%;
 }
+/* **********************************************************************************************'*/
 
 
-
+/*Styling af footer*/
+/*mørk baggrund og hvid tekst, flyder 1005 af skærmen og flexer indholder så det står vandret*/
 footer {
     background-color: var(--sort);
     color: var(--hvid);
@@ -609,16 +669,17 @@ footer {
     display: flex;
     justify-content: space-between;
     gap: 60px;
-    width: 100%;
-    
+    width: 100%;  
 }
 
+/*overskriften styles, og der sættes en hvid linje over "Kontakt Os", ved brug af border-top*/
 .footer h1 {
     border-top: 1px solid var(--hvid);
     width: 120%;
     padding-top: 20px;
 }
 
+/*Styling af links i en stak*/
 #footerlinks {
     display: flex;
     flex-direction: column;
@@ -627,30 +688,30 @@ footer {
     align-self: flex-end;
 }
 
+/*links styles med signika font*/
 footer a {
     font-family: var(--signika);
+    color: var(--hvid);
 }
-
-/* unvisited link */
-footer a:link {
-    color: var(--hvid);
-  }
   
-  /* visited link */
-footer a:visited {
-    color: var(--hvid);
-  }
-  
-  /* mouse over link */
+/* mouse over link giver grå farve */
 footer a:hover {
     color: var(--graa);
   }
   
-  /* selected link */
+  /* selected link bliver blå */
 footer a:active {
     color: var(--blaa);
   }
 
+/*section1 flexer tekst og links ved siden af hinanden*/
+#section1 {
+    display: flex;
+    gap: 10%;
+    width: 50%;
+}
+
+/*socialemedier flexet i deres boks*/
 #socialmedier {
     display: flex;
     justify-content: space-between;
@@ -658,15 +719,9 @@ footer a:active {
     align-items: end;
 }
 
+/*størrelse på socialemedier ikoner*/
 #socialmedier img {
     width: 60px;
     height: 60px;
 }
 
-
-
-#section1 {
-    display: flex;
-    gap: 10%;
-    width: 50%;
-}
