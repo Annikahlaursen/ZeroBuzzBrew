@@ -3,6 +3,7 @@ fil: js.js
 formål: at lave javsscript til vores hjemmeside
 */
 
+//HTML injektion med header
 hoved.innerHTML = `
  
         <a href="" class="menu"></a>
@@ -56,7 +57,7 @@ hoved.innerHTML = `
         </nav>
 `
 
-
+//HTML injektion til footer
 fod.innerHTML += `
 <div class="footer">
             <div id="section1">
@@ -84,7 +85,7 @@ fod.innerHTML += `
 `
 
 
-
+//HTML injektion hvor teksten på spørgsmålsiden bliver udskiftet med første spørgsmål og 3 svarmulgiheder
 function nr1() {
     sporgsmal.innerHTML = `
     <p>
@@ -105,7 +106,7 @@ function nr1() {
     `
 }
 
-
+//HTML injektion hvor spørgsmål 1 bliver skiftet ud med spørgsmål 2
 function nr2(){
     
         sporgsmal.innerHTML = `
@@ -127,6 +128,8 @@ function nr2(){
     `
 }
 
+
+//HTML injektion hvor spørgsmål 2 bliver skiftet ud med spørgsmål 3
 function nr3(){
     
     sporgsmal.innerHTML = `
@@ -147,6 +150,8 @@ pilv.innerHTML = `
 `
 }
 
+
+//HTML injektion hvor spørgsmål 3 bliver skiftet ud med spørgsmål 4
 function nr4(){
     sporgsmal.innerHTML = `
     <p>
@@ -167,6 +172,8 @@ pilv.innerHTML = `
 `
 }
 
+
+//HTML injektion hvor spørgsmål 4 bliver skiftet ud med spørgsmål 5
 function nr5(){
     
     sporgsmal.innerHTML = `
@@ -192,8 +199,10 @@ pilv.innerHTML = `
 
 
 
+//HTML injektion hvor spørgsmål 5 bliver skiftet ud med reslutatet af testen
 
 function res() {
+    //array/liste med alle øl varianter
     const srcArray = [
     "<a href='lysAle.html'><img src='img/gron.webp'></a>",
     "<a href='fejl404.html'><img src='img/blaa.webp'></a>",
@@ -209,13 +218,14 @@ function res() {
     "<a href='fejl404.html'><img src='img/abletranebar.webp'></a>"
     ]
 
-
+    //selve html injektionen med overskriften
     main.innerHTML = `
     <h2>
         Tillykke her er din top 3 øl
     </h2>
-
     `
+
+    //3 variabler der random vælger en øl fra arrayet/listen "srcArray"
     // tilfældig værdi med .length på galleriet, der kan udviddes ad libitum
     let rnd = Math.floor(Math.random()*srcArray.length)
     let rnd2 = Math.floor(Math.random()*srcArray.length)
@@ -223,6 +233,7 @@ function res() {
 
 
     // viser billedet (der skal ikke laves en img tag for den er allerede lavet i arrayet)
+    //HTML injektion af billeder af øl, der bliver random valgt af variablerne
     main.innerHTML += srcArray[rnd] + srcArray[rnd2] + srcArray[rnd3]
 
 }
