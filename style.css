@@ -447,6 +447,7 @@ header label {
   }
 /*Styling fejl404 slutter*/
 
+/*Styling underside oversigt starter*/
 #oversigth2 {
     color: var(--sort);
     text-align: center;
@@ -474,8 +475,9 @@ header label {
     text-decoration: none;
     color: var(--sort);
 }
+/*Styling underside oversigt slutter*/
 
-
+/*Styling underside af beskrivelse af øllene starter*/
 .produkt {
     display: flex;
     justify-content: space-evenly;
@@ -605,9 +607,9 @@ header label {
     font-size: 13px;
     height: 20%;
 }
+/*Styling underside af beskrivelse af øllene slutter*/
 
-
-
+/*Styling footer starter*/
 footer {
     background-color: var(--sort);
     color: var(--hvid);
@@ -682,3 +684,4 @@ footer a:active {
     gap: 10%;
     width: 50%;
 }
+/*Styling footer slutter*/
