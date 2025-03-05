@@ -13,8 +13,9 @@
     <title>ZeroBuzz Brew | Special øl uden alkohol | Alkoholfri | Testside</title>
 </head>
 <body>
+    <!--Header på testsiden har sin egen html, da den skal laves i en mørk farve-->
     <header>
- 
+        
         <a href="" class="menu"></a>
         <input type="checkbox" id="menu-bar">
         <label for="menu-bar">Menu</label>
@@ -67,10 +68,12 @@
 
     </header>
     
+    <!--main har fået en id, så dan kan bruges i javascript-->
     <main id="main">
         <h2>
             Find din nye ynglings øl!
         </h2>
+        <!--Sektionen sporgsmal bruges til at skifte spørgsmål og svarmuligheder inde i javascript-->
         <section id="sporgsmal">
             <p>
                 Svar på sprøgsmålene og find din nye ynglings alkoholfrie øl.
@@ -86,20 +89,23 @@
         </section>
 
         
-
+        <!--pil til højre til at gå videre-->
         <div class="pilh" id="pilh">
             <a onclick="nr1()"> &#8594;</a>
         </div>
 
+        <!--Pil til venstre til at gå tilbage-->
         <div class="pilv">
             <a onclick="nr1()">&#8592;</a>
         </div>
         
     </main>
 
+    <!--Footer er lavet med javascript med en html injektion, på id'en: fod-->
     <footer id="fod">
     </footer>
 
+    <!--Link til javascript-->
     <script src="js/js.js"></script>
 
     
