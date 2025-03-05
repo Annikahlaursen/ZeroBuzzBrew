@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Signika:wght@300..700&display=swap');
 
-
+/*De farver vi bruger, som er gjort til VAR*/
 :root {
     --sort: #172442;
     --hvid: #fdfdeb;
@@ -12,28 +12,32 @@
     --brun: #57341c;
     --graa: #5e6b7f;
 
-    
+    /*De skriftyper vi bruger*/
     --fatface:"Abril Fatface", serif;
     --signika: "Signika", sans-serif;
 }
 
-
+/*h1 styling*/
 h1 {
     text-align: center;
     margin-top: 5%;
     color: #172442;
 }
 
+/*p styling*/
 p {
     margin-left: 8%;
     margin-top: 4%;
     color: #172442;
 }
 
+/*h2 styling*/
 h2 {
     margin-left: 8%;
 }
 
+/*Styling bland selv siden starter*/
+/*antal funktionen styling*/
 .antal {
     display: flex;
 }
@@ -46,6 +50,7 @@ h2 {
     color: gray;
 }
 
+/*Øllene styling, både billeder og tekst*/
 .ol {
     display: grid;
     grid-template-columns: 50% 50%;
@@ -81,6 +86,7 @@ line-height: 90px;
     color: grey;
 }
 
+/*Teksten nederst på begge sider*/
 .beskrivelse {
     margin: 10%;
     color: #172442;
@@ -95,7 +101,10 @@ button {
     font-size: large;
    margin-left: 47%;
 }
+/*Styling af bland selv siden slut*/
 
+
+/*Styling af slideshow funktionen på abonnement siden*/
 div.scroll-container {
   background-color: #fdfdeb;
   overflow: auto;
@@ -107,12 +116,14 @@ div.scroll-container img {
   padding: 10px;
 }
 
+/*styling af main a på abonnement siden*/
 main a {
     font-family: var(--signika);    
     color: var(--sort);
     
 }
 
+/*footer styling*/
 footer p {
     font-family: var(--signika);    
     color: var(--hvid);

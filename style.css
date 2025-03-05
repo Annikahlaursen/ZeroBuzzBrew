@@ -481,7 +481,8 @@ header label {
 /* *********************************************************************************** */
 /*Styling fejl404 slutter*/
 
-/*Stylign af oversigt side*/
+
+/*Styling af oversigt side*/
 /*størrelse og farve på h2 overskriften*/
 #oversigth2 {
     color: var(--sort);
