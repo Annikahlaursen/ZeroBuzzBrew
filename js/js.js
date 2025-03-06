@@ -102,7 +102,7 @@ function nr1() {
     `
 
     pilv.innerHTML = `
-        <a onclick="nr2()"> &#8594;</a>
+        <a onclick="nr1()"> &#8594;</a>
     `
 }
 
@@ -124,7 +124,7 @@ function nr2(){
     `
 
     pilv.innerHTML = `
-    <a onclick="nr3()"> &#8594;</a>
+        <a onclick="nr1()"> &#8594;</a>
     `
 }
 
@@ -146,7 +146,7 @@ pilh.innerHTML = `
     <a onclick="nr4()"> &#8594;</a>
 `
 pilv.innerHTML = `
-<a onclick="nr4()"> &#8594;</a>
+<a onclick="nr2()"> &#8594;</a>
 `
 }
 
@@ -168,7 +168,7 @@ pilh.innerHTML = `
 `
 
 pilv.innerHTML = `
-<a onclick="nr5()"> &#8594;</a>
+<a onclick="nr3()"> &#8594;</a>
 `
 }
 
@@ -191,7 +191,7 @@ pilh.innerHTML = `
 `
 
 pilv.innerHTML = `
-<a onclick="res()"> &#8594;</a>
+<a onclick="nr4()"> &#8594;</a>
 `
 }
 
